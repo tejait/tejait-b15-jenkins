@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-git-jenkins-docker
+  name: spring-git-jenkins-docker-final
   labels:
-    app: spring-git-jenkins-docker
+    app: spring-git-jenkins-docker-final
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: spring-git-jenkins-docker
+      app: spring-git-jenkins-docker-final
   template:
     metadata:
       labels:
-        app: spring-git-jenkins-docker
+        app: spring-git-jenkins-docker-final
     spec:
       containers:
         - name: spring-git-jenkins-docker
-          image: 7013781152/spring-git-jenkins-docker-image-docker-hub-kubernetes:v1
+          image: 7013781152/spring-git-jenkins-docker-image-docker-hub-kubernetes-final:v1
           ports:
             - containerPort: 8080
