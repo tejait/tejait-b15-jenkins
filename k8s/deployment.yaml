@@ -15,7 +15,7 @@ spec:
         app: spring-git-jenkins-docker-final
     spec:
       containers:
-        - name: spring-git-jenkins-docker
+        - name: spring-git-jenkins-docker-final
           image: 7013781152/spring-git-jenkins-docker-image-docker-hub-kubernetes-final:v1
           ports:
             - containerPort: 8080
