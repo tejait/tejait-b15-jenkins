@@ -20,4 +20,8 @@ public class JenkinsController {
     public  String hello(){
         return "Hello Teja";
     }
+    @GetMapping("kubernetes")
+    public String kubernetes(){
+        return "Kubernetes API";
+    }
 }
