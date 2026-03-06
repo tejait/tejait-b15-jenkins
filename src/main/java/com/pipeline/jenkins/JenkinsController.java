@@ -12,4 +12,8 @@ public class JenkinsController {
         return "Welcome to Jenkins..User Teja";
     }
     //added comment for maven
+    @GetMapping("docker")
+    public String docker(){
+        return "Docker API";
+    }
 }
